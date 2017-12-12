@@ -5,7 +5,7 @@ header { background: #314567 url(images/banner.jpg) no-repeat left top; padding:
 header h1 { position: absolute; top: 35px; left: 90px; font-family: 'Abril Fatface', cursive; font-size: 2.6em; color: #fff; margin: 0; padding:0; }
 header p { line-height: 20px; font-size: 1.2em; margin: 0; padding: 0px 30px 15px 30px; color: rgba(255,255,255,.6); }
 
-article { padding: 0 30px 0 30px; }
+article { padding: 0 30px 0 90px; }
 
 article::after { content: ''; display: block; clear: both; }
 
@@ -32,9 +32,23 @@ h3 {
 	line-height: 1em;
 	margin: 50px 0 5px 0;
 	counter-increment: Digit;
+	position: relative;
 }
-h3::before{
-	content: counter(Digit) '. ';
+h3::before {
+    content: counter(Digit);
+    font-size: 4.5em;
+    color: rgba(255, 255, 255, .75);
+		text-shadow: rgba(255, 0, 0, 1) 0px 0px 10px;
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    left: -80px;
+    /*border: 2px solid  rgba(255, 0, 0, 0.0);*/
+		/*background:  rgba(255, 0, 0, 0.25);*/
+		/*box-sizing: border-box;*/
+    /*line-height: 100%;*/
+    /*border-radius: 5px;*/
+    text-align: center;
 }
 
 figure {
