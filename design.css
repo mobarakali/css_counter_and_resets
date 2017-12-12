@@ -31,6 +31,10 @@ h3 {
 	font-size: 1.3em;
 	line-height: 1em;
 	margin: 50px 0 5px 0;
+	counter-increment: Digit;
+}
+h3::before{
+	content: counter(Digit) '. ';
 }
 
 figure {
